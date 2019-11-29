@@ -8,13 +8,41 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="scss/app.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+   <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    --><link rel="stylesheet" href="scss/app.css">
 </head>
 <body>
 <header class="header">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="panel">
+    <div class="slider">
+        <div class="slider__item">
+         <div class="overlay"></div>
+            <div class="container banner">
+                    <p class="banner__title">Ground, Air or Sea</p>
+                    <p class="banner__description">WE DELIVER YOUR PACKAGE IN NO-TIME </p>
+                    <a class="banner__button button_banner"></a>
+                </div>
+            <img class="slider__img" src="./images/content/header.jpg" alt=""></div>
+        <div class="slider__item">
+            <div class="overlay"></div>
+            <div class="banner container">
+                <p class="banner__title">Ground, Air or Sea</p>
+                <p class="banner__description">WE DELIVER YOUR PACKAGE IN NO-TIME </p>
+                <a class="banner__button button_banner"></a>
+            </div>
+            <img class="slider__img" src="./images/content/header2.jpg" alt=""></div>
+        <div class="slider__item">
+            <div class="overlay"></div>
+            <div class="banner container">
+                <p class="banner__title">Flexible shipping for your business</p>
+                <p class="banner__description">Believe in possibilities</p>
+                <a class="banner__button button_banner"></a>
+            </div>
+            <img class="slider__img" src="./images/content/header3.jpg" alt="">
+        </div>
+    </div>
+    <div class="panel container">
             <div class="logo">
                 <img class="logo__img" src="./images/content/logo.png" alt="logo">
                 <h1 class="logo__title">cargo</h1>
@@ -31,6 +59,10 @@
                     </div>
                     <input class="search" type="search" placeholder="SEARCH..">
                 </div>
+                <div id="menu-toggle" class="menu-icon">
+                    <div class="menu-icon-line"></div>
+                </div>
+
                 <div class="megamenu__footer">
                     <div class="navigation">
                         <a class="navigation__link" href="">HOME</a>
@@ -41,45 +73,72 @@
                     </div>
                     <div class="button">REQUEST A QUOTE</div>
                 </div>
+
+                <!--<div id="mobile-nav" class="mobile-nav">
+                    <div class="mobile-nav__title">navigation</div>
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Home">Home</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Pages">Pages</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Features">Features</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Extensions">Extensions</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Tutorials">Tutorials</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#ContactUs">Contact us</a></li>
+                    </ul>
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="facebook"><i
+                                class="icon i-facebook"></i></a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="twitter"><i
+                                class="icon i-twitter"></i></a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="skype"><i
+                                class="icon i-skype"></i></a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="instagram "><i
+                                class="icon i-instagram"></i></a></li>
+                    </ul>
+                </div>-->
             </div>
-        </div>
-        <div class="banner">
-                <p class="banner__title">Ground, Air or Sea</p>
-                <p class="banner__description">WE DELIVER YOUR PACKAGE IN NO-TIME </p>
-                <a class="banner__button button_banner"></a>
+    </div>
+    <div id="mobile-nav" class="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Home">HOME</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Pages">COMPANY</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Features">GLOBAL COVERAGE</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Extensions">NEWS</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#Tutorials">CONTACT</a></li>
+        </ul>
+
+    </div>
+    <div class="contacts container">
+        <div class="contacts__widgets">
+            <div class="widget">
+                <img class="widget__img" src="./images/content/clock.png">
+                <div class="widget__info">
+                    <p class="widget__title">OPENING HOURS</p>
+                    <p class="widget__description">Monday - Friday 09.00 - 18.00</p>
+                    <p class="widget__description">Saturday 09.00 - 14.00</p>
+                </div>
+            </div>
+            <div class="widget">
+                <img class="widget__img" src="./images/content/tel.png">
+                <div class="widget__info">
+                    <p class="widget__title">CALL US ANYTIME</p>
+                    <p class="widget__description">1-999-434-7923</p>
+                    <p class="widget__description">2-888-434-7924</p>
+                </div>
+            </div>
+            <div class="widget">
+                <img class="widget__img" src="./images/content/mail.png">
+                <div class="widget__info">
+                    <p class="widget__title">EMAIL US</p>
+                    <p class="widget__description">info@kallyas-cargo.com</p>
+                    <p class="widget__description">office@kallyas-cargo.com</p>
+                </div>
+            </div>
+            <a href="" class="button button_contacts">BUY KALLYAS NOW</a>
         </div>
     </div>
 </header>
-<section class="contacts container">
-    <div class="contacts__widgets">
-        <div class="widget">
-            <img class="widget__img" src="./images/content/clock.png">
-            <div class="widget__info">
-                <p class="widget__title">OPENING HOURS</p>
-                <p class="widget__description">Monday - Friday 09.00 - 18.00</p>
-                <p class="widget__description">Saturday 09.00 - 14.00</p>
-            </div>
-        </div>
-        <div class="widget">
-            <img class="widget__img" src="./images/content/tel.png">
-            <div class="widget__info">
-                <p class="widget__title">CALL US ANYTIME</p>
-                <p class="widget__description">1-999-434-7923</p>
-                <p class="widget__description">2-888-434-7924</p>
-            </div>
-        </div>
-        <div class="widget">
-            <img class="widget__img" src="./images/content/mail.png">
-            <div class="widget__info">
-                <p class="widget__title">EMAIL US</p>
-                <p class="widget__description">info@kallyas-cargo.com</p>
-                <p class="widget__description">office@kallyas-cargo.com</p>
-            </div>
-        </div>
-        <a href="" class="button button_contacts">BUY KALLYAS NOW</a>
-    </div>
-</section>
-<section class="skills">
+
+<!--<section class="skills">
     <div class="container">
         <p class="skills__suptitle">WELCOME TO</p>
         <h2 class="skills__title">KALLYAS CARGO</h2>
@@ -339,7 +398,13 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>-->
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
 
